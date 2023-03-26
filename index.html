@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="board">
+        <form class="board__todoform">
+            <input placeholder="new todo" type="text" class="board__todoform-input">
+            <button type="submit" class="board__todoform-btn">Add</button>
+
+        </form>
+        <div class="board__columns">
+            <div class="board__column" id="todo">
+                <h3 class="board__column-heading">TODO</h3>
+                <!-- <p class="board__column-task" draggable="true">get groceries</p>
+                <p class="board__column-task" draggable="true">learn js</p>
+                <p class="board__column-task" draggable="true">sleep well</p> -->
+
+            </div>
+            <div class="board__column" id="inprogress">
+                <h3 class="board__column-heading">In Progress</h3>
+                <!-- <p class="board__column-task" draggable="true">do washing</p>
+                <p class="board__column-task" draggable="true">complete homework</p>
+                <p class="board__column-task" draggable="true">eat well</p> -->
+
+            </div>
+            <div class="board__column" id="completed">
+                <h3 class="board__column-heading">Completed</h3>
+                <!-- <p class="board__column-task" draggable="true">do washing</p>
+                <p class="board__column-task" draggable="true">complete homework</p>
+                <p class="board__column-task" draggable="true">eat well</p> -->
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+<script src="drag.js"></script>
+<script src="todo.js"></script>    
+</body>
+</html>

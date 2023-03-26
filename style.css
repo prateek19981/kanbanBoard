@@ -1,0 +1,82 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+}
+
+.board
+{
+    width: 100%;
+    height:100vh;
+    background-color: lightgray;
+    overflow: scroll;
+}
+
+.board__todoform
+{
+    padding:30px;
+}
+
+.board__todoform-input
+{
+    padding:7px 10px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+.board__todoform button
+{
+    padding: 5px 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.board__columns
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80%;
+    
+}
+
+.board__column
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    height: 100%;
+    width: 100%;
+    margin:10px;
+    padding: 20px;
+    background-color: #d7dbd9
+
+}
+
+.board__column-task
+{
+    padding:10px;
+    border-radius: 4px;
+    margin:10px;
+    display: flex;
+    width: 80%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: #929694;
+    cursor: move;
+}
+
+.is-dragging
+{
+    scale: 1.05;
+    color: white;
+    background-color: black;
+}
